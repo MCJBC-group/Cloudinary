@@ -26,7 +26,7 @@ public class homeController {
     }
     @GetMapping("/add")
     public String newActor(Model model){
-        model.addAttribute("actor", newActor());
+        model.addAttribute("actor", new Actor());
         return "form";
     }
     @PostMapping("/add")
